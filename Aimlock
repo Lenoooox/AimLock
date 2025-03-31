@@ -478,7 +478,7 @@ Title_2.TextSize = 14.000
 
 -- Scripts:
 
-local function YIDSM_fake_script() -- Main.LocalScript 
+local function KQWR_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local espFrame = script.Parent.ESPPage
@@ -492,7 +492,6 @@ local function YIDSM_fake_script() -- Main.LocalScript
 	
 	local UserInputService = game:GetService("UserInputService")
 	local RunService = game:GetService("RunService")
-	local StarterGui = game:GetService("StarterGui")
 	local camera = workspace.CurrentCamera
 	local player = game.Players.LocalPlayer
 	local players = game:GetService("Players")
@@ -608,7 +607,7 @@ local function YIDSM_fake_script() -- Main.LocalScript
 	
 	players.PlayerRemoving:Connect(removeESP)
 	
-	-- Function to Get Closest Target (Now UGC-Safe)
+	-- Function to Get Closest Target
 	local function GetClosestTarget()
 		local closestTarget = nil
 		local shortestDistance = math.huge
@@ -620,14 +619,29 @@ local function YIDSM_fake_script() -- Main.LocalScript
 				if aimTarget == "Head" then
 					targetPart = enemy.Character:FindFirstChild("Head")
 				elseif aimTarget == "Torso" then
-					-- Find valid torso part in R6, R15, or custom avatars
 					targetPart = enemy.Character:FindFirstChild("UpperTorso") 
 						or enemy.Character:FindFirstChild("Torso") 
 						or enemy.Character:FindFirstChild("Chest") 
 						or enemy.Character:FindFirstChild("LowerTorso") 
+				elseif aimTarget == "Neck" then
+					local head = enemy.Character:FindFirstChild("Head")
+					local upperTorso = enemy.Character:FindFirstChild("UpperTorso") or enemy.Character:FindFirstChild("Torso")
+	
+					-- If R15, estimate Neck position between Head and UpperTorso
+					if head and upperTorso then
+						targetPart = Instance.new("Part")
+						targetPart.Size = Vector3.new(0.1, 0.1, 0.1) -- Tiny invisible part
+						targetPart.Position = (head.Position + upperTorso.Position) / 2
+						targetPart.Transparency = 1
+						targetPart.Anchored = true
+						targetPart.Parent = workspace
+	
+						game:GetService("Debris"):AddItem(targetPart, 0.1) -- Auto-remove
+					elseif upperTorso then
+						targetPart = upperTorso -- Use torso as fallback
+					end
 				end
 	
-				-- Ensure the target part is a BasePart (ignores UGC hats & invalid parts)
 				if targetPart and targetPart:IsA("BasePart") then
 					local screenPosition, onScreen = camera:WorldToViewportPoint(targetPart.Position)
 					if onScreen then
@@ -650,7 +664,7 @@ local function YIDSM_fake_script() -- Main.LocalScript
 				isAimLockOn = not isAimLockOn
 				aimText.Text = isAimLockOn and "ON" or "OFF"
 			elseif input.KeyCode == Enum.KeyCode.L then
-				aimTarget = (aimTarget == "Head") and "Torso" or "Head"
+				aimTarget = (aimTarget == "Head") and "Neck" or (aimTarget == "Neck" and "Torso" or "Head")
 				aimTargetText.Text = "Target: " .. aimTarget
 			elseif input.KeyCode == Enum.KeyCode.E and isAimLockOn then
 				isHoldingE = true
@@ -674,7 +688,9 @@ local function YIDSM_fake_script() -- Main.LocalScript
 		end
 	end)
 	
-	-- Notification on Script Load
+	-- Notification on Load
+	local StarterGui = game:GetService("StarterGui")
+	
 	StarterGui:SetCore("SendNotification", {
 		Title = "Welcome to John's Aimlock";
 		Text = "Script Loaded | v0.21";
@@ -682,8 +698,8 @@ local function YIDSM_fake_script() -- Main.LocalScript
 	})
 	
 end
-coroutine.wrap(YIDSM_fake_script)()
-local function ONWVGA_fake_script() -- AladiaUI.LocalScript 
+coroutine.wrap(KQWR_fake_script)()
+local function VTULWXT_fake_script() -- AladiaUI.LocalScript 
 	local script = Instance.new('LocalScript', AladiaUI)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -739,8 +755,8 @@ local function ONWVGA_fake_script() -- AladiaUI.LocalScript
 	end
 	
 end
-coroutine.wrap(ONWVGA_fake_script)()
-local function BNBJAA_fake_script() -- AladiaUI.Login 
+coroutine.wrap(VTULWXT_fake_script)()
+local function PLSQT_fake_script() -- AladiaUI.Login 
 	local script = Instance.new('LocalScript', AladiaUI)
 
 	local loginFrame = script.Parent:WaitForChild("LoginFrame")
@@ -769,4 +785,4 @@ local function BNBJAA_fake_script() -- AladiaUI.Login
 	end)
 	
 end
-coroutine.wrap(BNBJAA_fake_script)()
+coroutine.wrap(PLSQT_fake_script)()
