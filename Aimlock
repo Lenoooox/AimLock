@@ -27,28 +27,31 @@ local UICorner_9 = Instance.new("UICorner")
 local aimLock = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
-local ESPPage = Instance.new("Frame")
+local aimTargetToggle = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
-local Frame_2 = Instance.new("Frame")
+local AimTargetLabel = Instance.new("TextLabel")
+local ESPPage = Instance.new("Frame")
 local UICorner_12 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
 local Back_2 = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
-local ESP = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
+local ESP = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
 local TextLabel_5 = Instance.new("TextLabel")
 local Drag = Instance.new("Frame")
-local UICorner_15 = Instance.new("UICorner")
-local LoginFrame = Instance.new("Frame")
 local UICorner_16 = Instance.new("UICorner")
-local UsernameBox = Instance.new("TextBox")
+local LoginFrame = Instance.new("Frame")
 local UICorner_17 = Instance.new("UICorner")
+local UsernameBox = Instance.new("TextBox")
+local UICorner_18 = Instance.new("UICorner")
 local usrName = Instance.new("TextLabel")
 local pssWord = Instance.new("TextLabel")
 local PasswordBox = Instance.new("TextBox")
-local UICorner_18 = Instance.new("UICorner")
-local LoginButton = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
+local LoginButton = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
 local ErrorLabel = Instance.new("TextLabel")
 local Title_2 = Instance.new("TextLabel")
 
@@ -225,13 +228,43 @@ TextLabel_3.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
 TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.565610886, 0, 0.229885057, 0)
+TextLabel_3.Position = UDim2.new(0.561674237, 0, 0.227527142, 0)
 TextLabel_3.Size = UDim2.new(0, 83, 0, 22)
 TextLabel_3.Font = Enum.Font.SourceSansBold
-TextLabel_3.Text = "Toggled"
+TextLabel_3.Text = "Aim Status:"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+aimTargetToggle.Name = "aimTargetToggle"
+aimTargetToggle.Parent = MainPage
+aimTargetToggle.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+aimTargetToggle.BackgroundTransparency = 0.700
+aimTargetToggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+aimTargetToggle.BorderSizePixel = 0
+aimTargetToggle.Position = UDim2.new(0.0588235296, 2, 0.360153258, 0)
+aimTargetToggle.Size = UDim2.new(0, 100, 0, 22)
+aimTargetToggle.Font = Enum.Font.SourceSansBold
+aimTargetToggle.Text = "Toggle Aim Target"
+aimTargetToggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+aimTargetToggle.TextSize = 14.000
+
+UICorner_11.CornerRadius = UDim.new(0, 4)
+UICorner_11.Parent = aimTargetToggle
+
+AimTargetLabel.Name = "AimTargetLabel"
+AimTargetLabel.Parent = MainPage
+AimTargetLabel.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+AimTargetLabel.BackgroundTransparency = 1.000
+AimTargetLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimTargetLabel.BorderSizePixel = 0
+AimTargetLabel.Position = UDim2.new(0.561674237, 0, 0.357795328, 0)
+AimTargetLabel.Size = UDim2.new(0, 83, 0, 22)
+AimTargetLabel.Font = Enum.Font.SourceSansBold
+AimTargetLabel.Text = "Target: Head"
+AimTargetLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimTargetLabel.TextSize = 14.000
+AimTargetLabel.TextXAlignment = Enum.TextXAlignment.Left
 
 ESPPage.Name = "ESPPage"
 ESPPage.Parent = Main
@@ -243,7 +276,7 @@ ESPPage.Position = UDim2.new(0, 0, 5.84627919e-08, 0)
 ESPPage.Size = UDim2.new(0, 221, 0, 261)
 ESPPage.Visible = false
 
-UICorner_11.Parent = ESPPage
+UICorner_12.Parent = ESPPage
 
 Frame_2.Parent = ESPPage
 Frame_2.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
@@ -253,8 +286,8 @@ Frame_2.BorderSizePixel = 0
 Frame_2.Position = UDim2.new(0.0588235296, 0, 0.0383141749, 0)
 Frame_2.Size = UDim2.new(0, 195, 0, 33)
 
-UICorner_12.CornerRadius = UDim.new(0, 4)
-UICorner_12.Parent = Frame_2
+UICorner_13.CornerRadius = UDim.new(0, 4)
+UICorner_13.Parent = Frame_2
 
 TextLabel_4.Parent = Frame_2
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -285,8 +318,8 @@ Back_2.TextScaled = true
 Back_2.TextSize = 14.000
 Back_2.TextWrapped = true
 
-UICorner_13.CornerRadius = UDim.new(0, 4)
-UICorner_13.Parent = Back_2
+UICorner_14.CornerRadius = UDim.new(0, 4)
+UICorner_14.Parent = Back_2
 
 ESP.Name = "ESP"
 ESP.Parent = ESPPage
@@ -301,8 +334,8 @@ ESP.Text = "Player Esp"
 ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
 ESP.TextSize = 14.000
 
-UICorner_14.CornerRadius = UDim.new(0, 4)
-UICorner_14.Parent = ESP
+UICorner_15.CornerRadius = UDim.new(0, 4)
+UICorner_15.Parent = ESP
 
 TextLabel_5.Parent = ESPPage
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
@@ -326,7 +359,7 @@ Drag.BorderSizePixel = 0
 Drag.Position = UDim2.new(0.275491416, 0, -0.0337246135, 0)
 Drag.Size = UDim2.new(0, 100, 0, 8)
 
-UICorner_15.Parent = Drag
+UICorner_16.Parent = Drag
 
 LoginFrame.Name = "LoginFrame"
 LoginFrame.Parent = AladiaUI
@@ -337,7 +370,7 @@ LoginFrame.BorderSizePixel = 0
 LoginFrame.Position = UDim2.new(0.371693134, 0, 0.376595736, 0)
 LoginFrame.Size = UDim2.new(0, 200, 0, 159)
 
-UICorner_16.Parent = LoginFrame
+UICorner_17.Parent = LoginFrame
 
 UsernameBox.Name = "UsernameBox"
 UsernameBox.Parent = LoginFrame
@@ -353,8 +386,8 @@ UsernameBox.Text = ""
 UsernameBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 UsernameBox.TextSize = 14.000
 
-UICorner_17.CornerRadius = UDim.new(0, 4)
-UICorner_17.Parent = UsernameBox
+UICorner_18.CornerRadius = UDim.new(0, 4)
+UICorner_18.Parent = UsernameBox
 
 usrName.Name = "usrName"
 usrName.Parent = LoginFrame
@@ -398,8 +431,8 @@ PasswordBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 PasswordBox.TextSize = 14.000
 PasswordBox.TextTransparency = -0.030
 
-UICorner_18.CornerRadius = UDim.new(0, 4)
-UICorner_18.Parent = PasswordBox
+UICorner_19.CornerRadius = UDim.new(0, 4)
+UICorner_19.Parent = PasswordBox
 
 LoginButton.Name = "LoginButton"
 LoginButton.Parent = LoginFrame
@@ -414,8 +447,8 @@ LoginButton.Text = "Login"
 LoginButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoginButton.TextSize = 14.000
 
-UICorner_19.CornerRadius = UDim.new(0, 4)
-UICorner_19.Parent = LoginButton
+UICorner_20.CornerRadius = UDim.new(0, 4)
+UICorner_20.Parent = LoginButton
 
 ErrorLabel.Name = "ErrorLabel"
 ErrorLabel.Parent = LoginFrame
@@ -445,7 +478,7 @@ Title_2.TextSize = 14.000
 
 -- Scripts:
 
-local function XAJBEVY_fake_script() -- Main.LocalScript 
+local function INPC_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local espFrame = script.Parent.ESPPage
@@ -467,6 +500,13 @@ local function XAJBEVY_fake_script() -- Main.LocalScript
 	local isAimLockOn = false
 	local isHoldingE = false
 	local isESPOn = false
+	local aimTarget = "Head" -- Default aim target
+	
+	-- UI Elements
+	local aimTargetText = mainPage:WaitForChild("AimTargetLabel") -- Label for target
+	local aimText = mainPage:WaitForChild("TextLabel") -- Aimlock status text
+	aimTargetText.Text = "Target: Head"
+	aimText.Text = "OFF"
 	
 	-- GUI Controls
 	Button.MouseButton1Click:Connect(function()
@@ -495,8 +535,6 @@ local function XAJBEVY_fake_script() -- Main.LocalScript
 			if input.KeyCode == Enum.KeyCode.F then
 				guiVisible = not guiVisible
 				script.Parent.Parent.Enabled = guiVisible
-			elseif input.KeyCode == Enum.KeyCode.E and isAimLockOn then
-				isHoldingE = true
 			elseif input.KeyCode == Enum.KeyCode.T then
 				if isESPOn then
 					toggleESP()
@@ -507,16 +545,8 @@ local function XAJBEVY_fake_script() -- Main.LocalScript
 		end
 	end)
 	
-	UserInputService.InputEnded:Connect(function(input, gameProcessed)
-		if not gameProcessed and input.KeyCode == Enum.KeyCode.E then
-			isHoldingE = false
-		end
-	end)
-	
 	-- Aimlock Toggle
 	local aimLock = mainPage:WaitForChild("aimLock")
-	local aimText = mainPage:WaitForChild("TextLabel")
-	aimText.Text = "OFF"
 	
 	aimLock.MouseButton1Click:Connect(function()
 		isAimLockOn = not isAimLockOn
@@ -530,29 +560,22 @@ local function XAJBEVY_fake_script() -- Main.LocalScript
 	
 	local function createESP(plr)
 		if plr == player or not plr.Character then return end
-	
-		-- Remove existing ESP first
 		local existingESP = plr.Character:FindFirstChild("ESP_Highlight")
-		if existingESP then
-			existingESP:Destroy()
-		end
+		if existingESP then existingESP:Destroy() end
 	
-		-- Create highlight effect
 		local highlight = Instance.new("Highlight")
 		highlight.Name = "ESP_Highlight"
 		highlight.Adornee = plr.Character
-		highlight.FillTransparency = 1 -- Only shows outline
-		highlight.OutlineColor = Color3.new(1, 0, 0) -- Red outline
-		highlight.OutlineTransparency = 0 -- Fully visible
+		highlight.FillTransparency = 1
+		highlight.OutlineColor = Color3.new(1, 0, 0)
+		highlight.OutlineTransparency = 0
 		highlight.Parent = plr.Character
 	end
 	
 	local function removeESP(plr)
 		if plr.Character then
 			local highlight = plr.Character:FindFirstChild("ESP_Highlight")
-			if highlight then
-				highlight:Destroy()
-			end
+			if highlight then highlight:Destroy() end
 		end
 	end
 	
@@ -573,11 +596,10 @@ local function XAJBEVY_fake_script() -- Main.LocalScript
 	
 	espButton.MouseButton1Click:Connect(toggleESP)
 	
-	-- Keep ESP on for new and respawned players
 	players.PlayerAdded:Connect(function(plr)
 		plr.CharacterAdded:Connect(function()
 			if isESPOn then
-				task.wait(1) -- Allow character to fully load
+				task.wait(1)
 				createESP(plr)
 			end
 		end)
@@ -585,22 +607,22 @@ local function XAJBEVY_fake_script() -- Main.LocalScript
 	
 	players.PlayerRemoving:Connect(removeESP)
 	
-	-- Aimlock Functionality
+	-- Function to Get Closest Target
 	local function GetClosestTarget()
 		local closestTarget = nil
-		local shortestDistance = math.huge -- Infinite distance
+		local shortestDistance = math.huge
 	
 		for _, enemy in pairs(players:GetPlayers()) do
 			if enemy ~= player and enemy.Character then
-				local head = enemy.Character:FindFirstChild("Head") -- Aim at the head
+				local targetPart = enemy.Character:FindFirstChild(aimTarget) -- Use selected target (Head/Torso)
 	
-				if head then
-					local screenPosition, onScreen = camera:WorldToViewportPoint(head.Position)
+				if targetPart then
+					local screenPosition, onScreen = camera:WorldToViewportPoint(targetPart.Position)
 					if onScreen then
 						local distance = (Vector2.new(screenPosition.X, screenPosition.Y) - UserInputService:GetMouseLocation()).Magnitude
 						if distance < shortestDistance then
 							shortestDistance = distance
-							closestTarget = head
+							closestTarget = targetPart
 						end
 					end
 				end
@@ -609,6 +631,28 @@ local function XAJBEVY_fake_script() -- Main.LocalScript
 		return closestTarget
 	end
 	
+	-- Keybind Controls
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if not gameProcessed then
+			if input.KeyCode == Enum.KeyCode.M then
+				isAimLockOn = not isAimLockOn
+				aimText.Text = isAimLockOn and "ON" or "OFF"
+			elseif input.KeyCode == Enum.KeyCode.L then
+				aimTarget = (aimTarget == "Head") and "Torso" or "Head"
+				aimTargetText.Text = "Target: " .. aimTarget
+			elseif input.KeyCode == Enum.KeyCode.E and isAimLockOn then
+				isHoldingE = true
+			end
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input, gameProcessed)
+		if not gameProcessed and input.KeyCode == Enum.KeyCode.E then
+			isHoldingE = false
+		end
+	end)
+	
+	-- Aimlock Logic
 	RunService.RenderStepped:Connect(function()
 		if isAimLockOn and isHoldingE then
 			local target = GetClosestTarget()
@@ -618,16 +662,17 @@ local function XAJBEVY_fake_script() -- Main.LocalScript
 		end
 	end)
 	
+	
 	local StarterGui = game:GetService("StarterGui")
 	
 	StarterGui:SetCore("SendNotification", {
-		Title = "ESP & AimLock";
-		Text = "Script Loaded Successfully!";
-		Duration = 3;
+		Title = "Welcome to John's Aimlock";
+		Text = "Script Loaded | v0.21";
+		Duration = 5;
 	})
 end
-coroutine.wrap(XAJBEVY_fake_script)()
-local function WKTJCI_fake_script() -- AladiaUI.LocalScript 
+coroutine.wrap(INPC_fake_script)()
+local function ZISOP_fake_script() -- AladiaUI.LocalScript 
 	local script = Instance.new('LocalScript', AladiaUI)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -683,8 +728,8 @@ local function WKTJCI_fake_script() -- AladiaUI.LocalScript
 	end
 	
 end
-coroutine.wrap(WKTJCI_fake_script)()
-local function FWNDY_fake_script() -- AladiaUI.Login 
+coroutine.wrap(ZISOP_fake_script)()
+local function HOWE_fake_script() -- AladiaUI.Login 
 	local script = Instance.new('LocalScript', AladiaUI)
 
 	local loginFrame = script.Parent:WaitForChild("LoginFrame")
@@ -713,4 +758,4 @@ local function FWNDY_fake_script() -- AladiaUI.Login
 	end)
 	
 end
-coroutine.wrap(FWNDY_fake_script)()
+coroutine.wrap(HOWE_fake_script)()
