@@ -478,7 +478,7 @@ Title_2.TextSize = 14.000
 
 -- Scripts:
 
-local function INPC_fake_script() -- Main.LocalScript 
+local function IGTMGXJ_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local espFrame = script.Parent.ESPPage
@@ -616,6 +616,11 @@ local function INPC_fake_script() -- Main.LocalScript
 			if enemy ~= player and enemy.Character then
 				local targetPart = enemy.Character:FindFirstChild(aimTarget) -- Use selected target (Head/Torso)
 	
+				-- If "Torso" is not found, check for "UpperTorso"
+				if not targetPart and aimTarget == "Torso" then
+					targetPart = enemy.Character:FindFirstChild("UpperTorso") or enemy.Character:FindFirstChild("Torso")
+				end
+	
 				if targetPart then
 					local screenPosition, onScreen = camera:WorldToViewportPoint(targetPart.Position)
 					if onScreen then
@@ -662,7 +667,7 @@ local function INPC_fake_script() -- Main.LocalScript
 		end
 	end)
 	
-	
+	-- Core GUI Notification
 	local StarterGui = game:GetService("StarterGui")
 	
 	StarterGui:SetCore("SendNotification", {
@@ -670,9 +675,10 @@ local function INPC_fake_script() -- Main.LocalScript
 		Text = "Script Loaded | v0.21";
 		Duration = 5;
 	})
+	
 end
-coroutine.wrap(INPC_fake_script)()
-local function ZISOP_fake_script() -- AladiaUI.LocalScript 
+coroutine.wrap(IGTMGXJ_fake_script)()
+local function LLDMV_fake_script() -- AladiaUI.LocalScript 
 	local script = Instance.new('LocalScript', AladiaUI)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -728,8 +734,8 @@ local function ZISOP_fake_script() -- AladiaUI.LocalScript
 	end
 	
 end
-coroutine.wrap(ZISOP_fake_script)()
-local function HOWE_fake_script() -- AladiaUI.Login 
+coroutine.wrap(LLDMV_fake_script)()
+local function ICLFMSY_fake_script() -- AladiaUI.Login 
 	local script = Instance.new('LocalScript', AladiaUI)
 
 	local loginFrame = script.Parent:WaitForChild("LoginFrame")
@@ -742,8 +748,8 @@ local function HOWE_fake_script() -- AladiaUI.Login
 	local welcome = loginFrame:WaitForChild("Title")
 	
 	local player = game.Players.LocalPlayer
-	local correctUsername = "Player"
-	local correctPassword = "1234"
+	local correctUsername = "John"
+	local correctPassword = "061001"
 	
 	welcome.Text = "Welcome, " .. player.Name
 	
@@ -758,4 +764,4 @@ local function HOWE_fake_script() -- AladiaUI.Login
 	end)
 	
 end
-coroutine.wrap(HOWE_fake_script)()
+coroutine.wrap(ICLFMSY_fake_script)()
