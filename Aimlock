@@ -3,7 +3,7 @@
 
 -- Instances:
 
-local AladiaUI = Instance.new("ScreenGui")
+local AladiaUIv003 = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local MainFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -75,12 +75,12 @@ local Ver = Instance.new("TextLabel")
 
 --Properties:
 
-AladiaUI.Name = "AladiaUI"
-AladiaUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-AladiaUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+AladiaUIv003.Name = "AladiaUI v0.03"
+AladiaUIv003.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AladiaUIv003.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
-Main.Parent = AladiaUI
+Main.Parent = AladiaUIv003
 Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Main.BackgroundTransparency = 0.350
 Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -575,7 +575,7 @@ UICorner_20.CornerRadius = UDim.new(0, 4)
 UICorner_20.Parent = Back_3
 
 LoginFrame.Name = "LoginFrame"
-LoginFrame.Parent = AladiaUI
+LoginFrame.Parent = AladiaUIv003
 LoginFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 LoginFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 LoginFrame.BackgroundTransparency = 0.550
@@ -707,7 +707,7 @@ Ver.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Scripts:
 
-local function VDBL_fake_script() -- Main.LocalScript 
+local function XSRQL_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	-- Frame Pages
@@ -946,14 +946,14 @@ local function VDBL_fake_script() -- Main.LocalScript
 	
 	StarterGui:SetCore("SendNotification", {
 		Title = "Welcome to John's Aimlock";
-		Text = "Script Loaded | v0.21";
+		Text = "Script Loaded | v0.03";
 		Duration = 5;
 	})
 	
 end
-coroutine.wrap(VDBL_fake_script)()
-local function HEAFAV_fake_script() -- AladiaUI.LocalScript 
-	local script = Instance.new('LocalScript', AladiaUI)
+coroutine.wrap(XSRQL_fake_script)()
+local function CSENS_fake_script() -- AladiaUIv003.LocalScript 
+	local script = Instance.new('LocalScript', AladiaUIv003)
 
 	local UserInputService = game:GetService("UserInputService")
 	
@@ -1008,9 +1008,9 @@ local function HEAFAV_fake_script() -- AladiaUI.LocalScript
 	end
 	
 end
-coroutine.wrap(HEAFAV_fake_script)()
-local function IALCNUC_fake_script() -- AladiaUI.Login 
-	local script = Instance.new('LocalScript', AladiaUI)
+coroutine.wrap(CSENS_fake_script)()
+local function NVZRS_fake_script() -- AladiaUIv003.Login 
+	local script = Instance.new('LocalScript', AladiaUIv003)
 
 	local TweenService = game:GetService("TweenService")
 	local loginFrame = script.Parent:WaitForChild("LoginFrame")
@@ -1201,4 +1201,4 @@ local function IALCNUC_fake_script() -- AladiaUI.Login
 	end)
 	
 end
-coroutine.wrap(IALCNUC_fake_script)()
+coroutine.wrap(NVZRS_fake_script)()
