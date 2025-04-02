@@ -707,7 +707,7 @@ Ver.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Scripts:
 
-local function CZKF_fake_script() -- Main.LocalScript 
+local function VDBL_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	-- Frame Pages
@@ -910,8 +910,6 @@ local function CZKF_fake_script() -- Main.LocalScript
 		return closestTarget
 	end
 	
-	local Npclock = morePage:WaitForChild("NpcAimLock")
-	
 	-- Keybind Controls
 	UserInputService.InputBegan:Connect(function(input, gameProcessed)
 		if not gameProcessed then
@@ -953,8 +951,8 @@ local function CZKF_fake_script() -- Main.LocalScript
 	})
 	
 end
-coroutine.wrap(CZKF_fake_script)()
-local function BYEO_fake_script() -- AladiaUI.LocalScript 
+coroutine.wrap(VDBL_fake_script)()
+local function HEAFAV_fake_script() -- AladiaUI.LocalScript 
 	local script = Instance.new('LocalScript', AladiaUI)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1010,8 +1008,8 @@ local function BYEO_fake_script() -- AladiaUI.LocalScript
 	end
 	
 end
-coroutine.wrap(BYEO_fake_script)()
-local function JYGWFSV_fake_script() -- AladiaUI.Login 
+coroutine.wrap(HEAFAV_fake_script)()
+local function IALCNUC_fake_script() -- AladiaUI.Login 
 	local script = Instance.new('LocalScript', AladiaUI)
 
 	local TweenService = game:GetService("TweenService")
@@ -1203,4 +1201,4 @@ local function JYGWFSV_fake_script() -- AladiaUI.Login
 	end)
 	
 end
-coroutine.wrap(JYGWFSV_fake_script)()
+coroutine.wrap(IALCNUC_fake_script)()
