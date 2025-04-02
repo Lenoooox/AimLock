@@ -16,42 +16,48 @@ local Main_2 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local Esp = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
+local Changelog = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
+local Changelog_2 = Instance.new("TextLabel")
+local AimlockAdded = Instance.new("TextLabel")
+local ESPAdded = Instance.new("TextLabel")
+local Hotkeys = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
 local MainPage = Instance.new("Frame")
 local Frame = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
 local UICorner_8 = Instance.new("UICorner")
-local Back = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
 local UICorner_9 = Instance.new("UICorner")
-local aimLock = Instance.new("TextButton")
+local Back = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
+local aimLock = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
 local aimTargetToggle = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local AimTargetLabel = Instance.new("TextLabel")
 local ESPPage = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
-local Frame_2 = Instance.new("Frame")
 local UICorner_13 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
 local Back_2 = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
-local ESP = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
+local ESP = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
 local TextLabel_5 = Instance.new("TextLabel")
 local Drag = Instance.new("Frame")
-local UICorner_16 = Instance.new("UICorner")
-local LoginFrame = Instance.new("Frame")
 local UICorner_17 = Instance.new("UICorner")
-local UsernameBox = Instance.new("TextBox")
+local LoginFrame = Instance.new("Frame")
 local UICorner_18 = Instance.new("UICorner")
+local UsernameBox = Instance.new("TextBox")
+local UICorner_19 = Instance.new("UICorner")
 local usrName = Instance.new("TextLabel")
 local pssWord = Instance.new("TextLabel")
 local PasswordBox = Instance.new("TextBox")
-local UICorner_19 = Instance.new("UICorner")
-local LoginButton = Instance.new("TextButton")
 local UICorner_20 = Instance.new("UICorner")
+local LoginButton = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
 local ErrorLabel = Instance.new("TextLabel")
 local Title_2 = Instance.new("TextLabel")
 
@@ -150,7 +156,82 @@ Esp.TextSize = 14.000
 UICorner_5.CornerRadius = UDim.new(0, 4)
 UICorner_5.Parent = Esp
 
-UICorner_6.Parent = Main
+Changelog.Name = "Changelog"
+Changelog.Parent = MainFrame
+Changelog.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Changelog.BackgroundTransparency = 0.750
+Changelog.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Changelog.BorderSizePixel = 0
+Changelog.Position = UDim2.new(0.0361990966, 0, 0.306513458, 0)
+Changelog.Size = UDim2.new(0, 206, 0, 165)
+
+UICorner_6.Parent = Changelog
+
+Changelog_2.Name = "Changelog"
+Changelog_2.Parent = Changelog
+Changelog_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Changelog_2.BackgroundTransparency = 1.000
+Changelog_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Changelog_2.BorderSizePixel = 0
+Changelog_2.Position = UDim2.new(0.0533980578, 0, 0.0363636352, 0)
+Changelog_2.Size = UDim2.new(0, 91, 0, 23)
+Changelog_2.Font = Enum.Font.SourceSansBold
+Changelog_2.Text = "Change Logs:"
+Changelog_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Changelog_2.TextScaled = true
+Changelog_2.TextSize = 14.000
+Changelog_2.TextWrapped = true
+Changelog_2.TextXAlignment = Enum.TextXAlignment.Left
+
+AimlockAdded.Name = "| Aimlock Added"
+AimlockAdded.Parent = Changelog
+AimlockAdded.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimlockAdded.BackgroundTransparency = 1.000
+AimlockAdded.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimlockAdded.BorderSizePixel = 0
+AimlockAdded.Position = UDim2.new(0.0825242698, 0, 0.187878788, 0)
+AimlockAdded.Size = UDim2.new(0, 91, 0, 23)
+AimlockAdded.Font = Enum.Font.SourceSansBold
+AimlockAdded.Text = "| Aimlock Added"
+AimlockAdded.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimlockAdded.TextScaled = true
+AimlockAdded.TextSize = 14.000
+AimlockAdded.TextWrapped = true
+AimlockAdded.TextXAlignment = Enum.TextXAlignment.Left
+
+ESPAdded.Name = "| ESP Added"
+ESPAdded.Parent = Changelog
+ESPAdded.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPAdded.BackgroundTransparency = 1.000
+ESPAdded.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESPAdded.BorderSizePixel = 0
+ESPAdded.Position = UDim2.new(0.0825242698, 0, 0.327272713, 0)
+ESPAdded.Size = UDim2.new(0, 91, 0, 23)
+ESPAdded.Font = Enum.Font.SourceSansBold
+ESPAdded.Text = "| ESP Added"
+ESPAdded.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESPAdded.TextScaled = true
+ESPAdded.TextSize = 14.000
+ESPAdded.TextWrapped = true
+ESPAdded.TextXAlignment = Enum.TextXAlignment.Left
+
+Hotkeys.Name = "| Hotkeys"
+Hotkeys.Parent = Changelog
+Hotkeys.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hotkeys.BackgroundTransparency = 1.000
+Hotkeys.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hotkeys.BorderSizePixel = 0
+Hotkeys.Position = UDim2.new(0.0825242698, 0, 0.466666669, 0)
+Hotkeys.Size = UDim2.new(0, 91, 0, 23)
+Hotkeys.Font = Enum.Font.SourceSansBold
+Hotkeys.Text = "| Hotkeys"
+Hotkeys.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hotkeys.TextScaled = true
+Hotkeys.TextSize = 14.000
+Hotkeys.TextWrapped = true
+Hotkeys.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_7.Parent = Main
 
 MainPage.Name = "MainPage"
 MainPage.Parent = Main
@@ -170,8 +251,8 @@ Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.0588235296, 0, 0.0383141749, 0)
 Frame.Size = UDim2.new(0, 195, 0, 33)
 
-UICorner_7.CornerRadius = UDim.new(0, 4)
-UICorner_7.Parent = Frame
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = Frame
 
 TextLabel_2.Parent = Frame
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -187,7 +268,7 @@ TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
-UICorner_8.Parent = MainPage
+UICorner_9.Parent = MainPage
 
 Back.Name = "Back"
 Back.Parent = MainPage
@@ -204,8 +285,8 @@ Back.TextScaled = true
 Back.TextSize = 14.000
 Back.TextWrapped = true
 
-UICorner_9.CornerRadius = UDim.new(0, 4)
-UICorner_9.Parent = Back
+UICorner_10.CornerRadius = UDim.new(0, 4)
+UICorner_10.Parent = Back
 
 aimLock.Name = "aimLock"
 aimLock.Parent = MainPage
@@ -220,8 +301,8 @@ aimLock.Text = "Aim Lock"
 aimLock.TextColor3 = Color3.fromRGB(255, 255, 255)
 aimLock.TextSize = 14.000
 
-UICorner_10.CornerRadius = UDim.new(0, 4)
-UICorner_10.Parent = aimLock
+UICorner_11.CornerRadius = UDim.new(0, 4)
+UICorner_11.Parent = aimLock
 
 TextLabel_3.Parent = MainPage
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
@@ -249,8 +330,8 @@ aimTargetToggle.Text = "Toggle Aim Target"
 aimTargetToggle.TextColor3 = Color3.fromRGB(255, 255, 255)
 aimTargetToggle.TextSize = 14.000
 
-UICorner_11.CornerRadius = UDim.new(0, 4)
-UICorner_11.Parent = aimTargetToggle
+UICorner_12.CornerRadius = UDim.new(0, 4)
+UICorner_12.Parent = aimTargetToggle
 
 AimTargetLabel.Name = "AimTargetLabel"
 AimTargetLabel.Parent = MainPage
@@ -276,7 +357,7 @@ ESPPage.Position = UDim2.new(0, 0, 5.84627919e-08, 0)
 ESPPage.Size = UDim2.new(0, 221, 0, 261)
 ESPPage.Visible = false
 
-UICorner_12.Parent = ESPPage
+UICorner_13.Parent = ESPPage
 
 Frame_2.Parent = ESPPage
 Frame_2.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
@@ -286,8 +367,8 @@ Frame_2.BorderSizePixel = 0
 Frame_2.Position = UDim2.new(0.0588235296, 0, 0.0383141749, 0)
 Frame_2.Size = UDim2.new(0, 195, 0, 33)
 
-UICorner_13.CornerRadius = UDim.new(0, 4)
-UICorner_13.Parent = Frame_2
+UICorner_14.CornerRadius = UDim.new(0, 4)
+UICorner_14.Parent = Frame_2
 
 TextLabel_4.Parent = Frame_2
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -318,8 +399,8 @@ Back_2.TextScaled = true
 Back_2.TextSize = 14.000
 Back_2.TextWrapped = true
 
-UICorner_14.CornerRadius = UDim.new(0, 4)
-UICorner_14.Parent = Back_2
+UICorner_15.CornerRadius = UDim.new(0, 4)
+UICorner_15.Parent = Back_2
 
 ESP.Name = "ESP"
 ESP.Parent = ESPPage
@@ -334,8 +415,8 @@ ESP.Text = "Player Esp"
 ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
 ESP.TextSize = 14.000
 
-UICorner_15.CornerRadius = UDim.new(0, 4)
-UICorner_15.Parent = ESP
+UICorner_16.CornerRadius = UDim.new(0, 4)
+UICorner_16.Parent = ESP
 
 TextLabel_5.Parent = ESPPage
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
@@ -359,7 +440,7 @@ Drag.BorderSizePixel = 0
 Drag.Position = UDim2.new(0.275491416, 0, -0.0337246135, 0)
 Drag.Size = UDim2.new(0, 100, 0, 8)
 
-UICorner_16.Parent = Drag
+UICorner_17.Parent = Drag
 
 LoginFrame.Name = "LoginFrame"
 LoginFrame.Parent = AladiaUI
@@ -370,7 +451,7 @@ LoginFrame.BorderSizePixel = 0
 LoginFrame.Position = UDim2.new(0.371693134, 0, 0.376595736, 0)
 LoginFrame.Size = UDim2.new(0, 200, 0, 159)
 
-UICorner_17.Parent = LoginFrame
+UICorner_18.Parent = LoginFrame
 
 UsernameBox.Name = "UsernameBox"
 UsernameBox.Parent = LoginFrame
@@ -381,13 +462,14 @@ UsernameBox.BorderSizePixel = 0
 UsernameBox.Position = UDim2.new(0.0599999987, 0, 0.34591195, 0)
 UsernameBox.Size = UDim2.new(0, 176, 0, 14)
 UsernameBox.Font = Enum.Font.SourceSansBold
+UsernameBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
 UsernameBox.PlaceholderText = "Enter Username"
 UsernameBox.Text = ""
 UsernameBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 UsernameBox.TextSize = 14.000
 
-UICorner_18.CornerRadius = UDim.new(0, 4)
-UICorner_18.Parent = UsernameBox
+UICorner_19.CornerRadius = UDim.new(0, 4)
+UICorner_19.Parent = UsernameBox
 
 usrName.Name = "usrName"
 usrName.Parent = LoginFrame
@@ -431,8 +513,8 @@ PasswordBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 PasswordBox.TextSize = 14.000
 PasswordBox.TextTransparency = -0.030
 
-UICorner_19.CornerRadius = UDim.new(0, 4)
-UICorner_19.Parent = PasswordBox
+UICorner_20.CornerRadius = UDim.new(0, 4)
+UICorner_20.Parent = PasswordBox
 
 LoginButton.Name = "LoginButton"
 LoginButton.Parent = LoginFrame
@@ -447,8 +529,8 @@ LoginButton.Text = "Login"
 LoginButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoginButton.TextSize = 14.000
 
-UICorner_20.CornerRadius = UDim.new(0, 4)
-UICorner_20.Parent = LoginButton
+UICorner_21.CornerRadius = UDim.new(0, 4)
+UICorner_21.Parent = LoginButton
 
 ErrorLabel.Name = "ErrorLabel"
 ErrorLabel.Parent = LoginFrame
@@ -478,7 +560,7 @@ Title_2.TextSize = 14.000
 
 -- Scripts:
 
-local function KQWR_fake_script() -- Main.LocalScript 
+local function BNHT_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local espFrame = script.Parent.ESPPage
@@ -489,6 +571,7 @@ local function KQWR_fake_script() -- Main.LocalScript
 	local Button2 = Section:WaitForChild("Esp")
 	local Back = mainPage:WaitForChild("Back")
 	local Back2 = espFrame:WaitForChild("Back")
+	local changelog = mainFrame:WaitForChild("Changelog")
 	
 	local UserInputService = game:GetService("UserInputService")
 	local RunService = game:GetService("RunService")
@@ -508,25 +591,37 @@ local function KQWR_fake_script() -- Main.LocalScript
 	aimTargetText.Text = "Target: Head"
 	aimText.Text = "OFF"
 	
+	local aimTargetToggle = mainPage:WaitForChild("aimTargetToggle") -- Ensure this is the correct button
+	
+	aimTargetToggle.MouseButton1Click:Connect(function()
+		aimTarget = (aimTarget == "Head") and "Neck" or (aimTarget == "Neck" and "Torso" or "Head")
+		aimTargetText.Text = "Target: " .. aimTarget
+	end)
+	
+	
 	-- GUI Controls
 	Button.MouseButton1Click:Connect(function()
 		mainFrame.Visible = not mainFrame.Visible
 		mainPage.Visible = not mainPage.Visible
+		changelog.Visible = not changelog.Visible
 	end)
 	
 	Back.MouseButton1Click:Connect(function()
 		mainPage.Visible = not mainPage.Visible
 		mainFrame.Visible = not mainFrame.Visible
+		changelog.Visible = not changelog.Visible
 	end)
 	
 	Button2.MouseButton1Click:Connect(function()
 		mainFrame.Visible = not mainFrame.Visible
 		espFrame.Visible = not espFrame.Visible
+		changelog.Visible = not changelog.Visible
 	end)
 	
 	Back2.MouseButton1Click:Connect(function()
 		mainFrame.Visible = not mainFrame.Visible
 		espFrame.Visible = not espFrame.Visible
+		changelog.Visible = not changelog.Visible
 	end)
 	
 	-- Toggle GUI Visibility
@@ -698,8 +793,8 @@ local function KQWR_fake_script() -- Main.LocalScript
 	})
 	
 end
-coroutine.wrap(KQWR_fake_script)()
-local function VTULWXT_fake_script() -- AladiaUI.LocalScript 
+coroutine.wrap(BNHT_fake_script)()
+local function YFDIIGV_fake_script() -- AladiaUI.LocalScript 
 	local script = Instance.new('LocalScript', AladiaUI)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -755,10 +850,11 @@ local function VTULWXT_fake_script() -- AladiaUI.LocalScript
 	end
 	
 end
-coroutine.wrap(VTULWXT_fake_script)()
-local function PLSQT_fake_script() -- AladiaUI.Login 
+coroutine.wrap(YFDIIGV_fake_script)()
+local function DAZWCV_fake_script() -- AladiaUI.Login 
 	local script = Instance.new('LocalScript', AladiaUI)
 
+	local TweenService = game:GetService("TweenService")
 	local loginFrame = script.Parent:WaitForChild("LoginFrame")
 	local mainFrame = script.Parent:WaitForChild("Main")
 	
@@ -766,23 +862,185 @@ local function PLSQT_fake_script() -- AladiaUI.Login
 	local passwordBox = loginFrame:WaitForChild("PasswordBox")
 	local loginButton = loginFrame:WaitForChild("LoginButton")
 	local errorLabel = loginFrame:WaitForChild("ErrorLabel")
-	local welcome = loginFrame:WaitForChild("Title")
+	local welcome = loginFrame:WaitForChild("Title")  -- Reuse the "welcome" TextLabel
 	
 	local player = game.Players.LocalPlayer
 	local correctUsername = "John"
 	local correctPassword = "061001"
 	
-	welcome.Text = "Welcome, " .. player.Name
+	local normalColor = Color3.fromRGB(0, 0, 0)  -- Background color for the textboxes (black)
+	local wrongColor = Color3.fromRGB(255, 0, 0)  -- Red color for wrong input
+	local transparency = 0.65  -- Transparency for the input boxes
+	
+	-- Set initial states
+	welcome.BackgroundTransparency = 0.9  -- Set background transparency to 0.9
+	welcome.Text = "Welcome, " .. player.Name  -- Set initial greeting message
+	
+	local messages = {
+		"Welcome, " .. player.Name,
+		"AimlockHub",
+		"Hello, " .. player.Name,
+		"Join our Discord"
+	}
+	
+	local currentMessageIndex = 1  -- To keep track of which message we're on
+	local isLoggedIn = false  -- Flag to track if the player is logged in
+	
+	-- Typewriter effect function
+	local function typeWriterEffect(text, label)
+		label.Text = ""  -- Start with an empty text
+		for i = 1, #text do
+			local currentText = text:sub(1, i)  -- Get the substring from the start to the current index
+			label.Text = currentText  -- Update the text
+			wait(0.1)  -- Wait before adding the next character
+		end
+	end
+	
+	-- Fade Out Text function
+	local function fadeOutText(label)
+		if label then
+			-- Tween to fade out
+			local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+			local tweenGoal = {TextTransparency = 1}
+			local tween = TweenService:Create(label, tweenInfo, tweenGoal)
+			tween:Play()
+			tween.Completed:Connect(function()
+				label.Visible = false
+			end)
+		end
+	end
+	
+	-- Fade In Text function
+	local function fadeInText(label)
+		if label then
+			-- Tween to fade in
+			local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+			local tweenGoal = {TextTransparency = 0}
+			label.Visible = true
+			local tween = TweenService:Create(label, tweenInfo, tweenGoal)
+			tween:Play()
+		end
+	end
+	
+	-- Cycle between messages every 5 seconds
+	local function cycleMessages()
+		while not isLoggedIn do
+			-- Get the current message
+			local currentMessage = messages[currentMessageIndex]
+	
+			-- Typewriter effect for the current message
+			typeWriterEffect(currentMessage, welcome)
+	
+			-- Wait for the message to finish typing
+			wait(#currentMessage * 0.1 + 1)  -- Wait a bit more than the typing duration
+	
+			-- Fade out the current message
+			fadeOutText(welcome)
+			wait(0.3)  -- Wait for fade out to complete
+	
+			-- Update the message index to the next one
+			currentMessageIndex = currentMessageIndex % #messages + 1  -- Cycle through the messages
+	
+			-- Wait before showing the next message
+			wait(1)  -- Wait a short period before showing the next message
+	
+			-- Fade in the next message
+			fadeInText(welcome)
+		end
+	end
+	
+	-- Function to vibrate and change the color of the input box
+	local function vibrateAndChangeColor(inputBox)
+		-- Tween for color change to red
+		local tweenInfo = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 1, false, 0)
+		local tweenGoal = {BackgroundColor3 = wrongColor}  -- Change background to red
+		local tween = TweenService:Create(inputBox, tweenInfo, tweenGoal)
+		tween:Play()
+	
+		-- Vibration effect: move back and forth
+		for i = 1, 5 do
+			local tweenMoveRight = TweenInfo.new(0.05, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+			local tweenGoalRight = {Position = inputBox.Position + UDim2.new(0, 5, 0, 0)}  -- Move right
+			local tweenRight = TweenService:Create(inputBox, tweenMoveRight, tweenGoalRight)
+			tweenRight:Play()
+			wait(0.05)
+	
+			local tweenMoveLeft = TweenInfo.new(0.05, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+			local tweenGoalLeft = {Position = inputBox.Position - UDim2.new(0, 5, 0, 0)}  -- Move left
+			local tweenLeft = TweenService:Create(inputBox, tweenMoveLeft, tweenGoalLeft)
+			tweenLeft:Play()
+			wait(0.05)
+		end
+	
+		-- Wait for 2 seconds
+		wait(2)
+	
+		-- Reset the color to normal
+		local resetTweenGoal = {BackgroundColor3 = normalColor}  -- Reset to normal color
+		local resetTween = TweenService:Create(inputBox, tweenInfo, resetTweenGoal)
+		resetTween:Play()
+	
+		-- Reset the transparency back to 0.65
+		local transparencyTween = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+		local transparencyGoal = {BackgroundTransparency = transparency}
+		local transparencyTweenEffect = TweenService:Create(inputBox, transparencyTween, transparencyGoal)
+		transparencyTweenEffect:Play()
+	end
+	
+	-- Start cycling messages asynchronously when the game starts
+	spawn(cycleMessages)
+	
+	local function typeWriterEffect(label, text)
+		label.Text = ""  -- Start with an empty text
+		for i = 1, #text do
+			local currentText = text:sub(1, i)  -- Get the substring from the start to the current index
+			label.Text = currentText  -- Update the text
+			wait(0.05)  -- Adjust the speed of the typewriter effect
+		end
+	end
 	
 	loginButton.MouseButton1Click:Connect(function()
-		if usernameBox.Text == correctUsername and passwordBox.Text == correctPassword then
-			loginFrame.Visible = false
+		-- Check if either username or password is empty
+		if usernameBox.Text == "" or passwordBox.Text == "" then
+			errorLabel.Text = "Please put credentials"  -- Display error for empty fields
+			errorLabel.Visible = true
+		elseif usernameBox.Text == correctUsername and passwordBox.Text == correctPassword then
+			-- Log the player in
+			isLoggedIn = true
+			errorLabel.Visible = true
+	
+			-- Display a loading sequence with typewriter effect
+			typeWriterEffect(errorLabel, "Loading script...")
+			wait(1)
+	
+			typeWriterEffect(errorLabel, "Loading script version...")
+			wait(1)
+	
+			typeWriterEffect(errorLabel, "Please wait...")
+			wait(1)
+	
+			typeWriterEffect(errorLabel, "Login Success!")
+			wait(1)
+	
+			-- Now show the main frame
 			mainFrame.Visible = true
+	
+			-- Optionally hide the login frame
+			loginFrame.Visible = false
 		else
-			errorLabel.Text = "Mali Password TanginaMO"
+			-- Trigger vibrate and color change for incorrect username or password
+			if usernameBox.Text ~= correctUsername then
+				vibrateAndChangeColor(usernameBox)
+				errorLabel.Text = "Username is incorrect"  -- Indicate that the username is wrong
+			elseif passwordBox.Text ~= correctPassword then
+				vibrateAndChangeColor(passwordBox)
+				errorLabel.Text = "Password is incorrect"  -- Indicate that the password is wrong
+			end
+	
+			-- Show error message
 			errorLabel.Visible = true
 		end
 	end)
 	
 end
-coroutine.wrap(PLSQT_fake_script)()
+coroutine.wrap(DAZWCV_fake_script)()
