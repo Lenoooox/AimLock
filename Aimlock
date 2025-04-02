@@ -707,7 +707,7 @@ Ver.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Scripts:
 
-local function XSRQL_fake_script() -- Main.LocalScript 
+local function GBTUDR_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	-- Frame Pages
@@ -951,8 +951,8 @@ local function XSRQL_fake_script() -- Main.LocalScript
 	})
 	
 end
-coroutine.wrap(XSRQL_fake_script)()
-local function CSENS_fake_script() -- AladiaUIv003.LocalScript 
+coroutine.wrap(GBTUDR_fake_script)()
+local function IWSNQ_fake_script() -- AladiaUIv003.LocalScript 
 	local script = Instance.new('LocalScript', AladiaUIv003)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1008,8 +1008,8 @@ local function CSENS_fake_script() -- AladiaUIv003.LocalScript
 	end
 	
 end
-coroutine.wrap(CSENS_fake_script)()
-local function NVZRS_fake_script() -- AladiaUIv003.Login 
+coroutine.wrap(IWSNQ_fake_script)()
+local function KXTE_fake_script() -- AladiaUIv003.Login 
 	local script = Instance.new('LocalScript', AladiaUIv003)
 
 	local TweenService = game:GetService("TweenService")
@@ -1169,13 +1169,13 @@ local function NVZRS_fake_script() -- AladiaUIv003.Login
 	
 			-- Display a loading sequence with typewriter effect
 			typeWriterEffect(errorLabel, "Loading script...")
-			wait(1)
+			wait(0.5)
 	
 			typeWriterEffect(errorLabel, "Loading script version...")
-			wait(1)
+			wait(0.5)
 	
 			typeWriterEffect(errorLabel, "Please wait...")
-			wait(1)
+			wait(0.5)
 	
 			typeWriterEffect(errorLabel, "Login Success!")
 			wait(1)
@@ -1201,4 +1201,4 @@ local function NVZRS_fake_script() -- AladiaUIv003.Login
 	end)
 	
 end
-coroutine.wrap(NVZRS_fake_script)()
+coroutine.wrap(KXTE_fake_script)()
