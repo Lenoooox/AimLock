@@ -771,7 +771,7 @@ Ver.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Scripts:
 
-local function JHMZNES_fake_script() -- Main.LocalScript 
+local function ZMJN_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	-- Frame Pages
@@ -987,13 +987,13 @@ local function JHMZNES_fake_script() -- Main.LocalScript
 	
 	StarterGui:SetCore("SendNotification", {
 		Title = "Welcome to John's Aimlock";
-		Text = "Script Loaded | v0.21";
+		Text = "Script Loaded | v0.03";
 		Duration = 5;
 	})
 	
 end
-coroutine.wrap(JHMZNES_fake_script)()
-local function QVOOC_fake_script() -- AladiaUIv02.LocalScript 
+coroutine.wrap(ZMJN_fake_script)()
+local function LKNDAGP_fake_script() -- AladiaUIv02.LocalScript 
 	local script = Instance.new('LocalScript', AladiaUIv02)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1049,8 +1049,8 @@ local function QVOOC_fake_script() -- AladiaUIv02.LocalScript
 	end
 	
 end
-coroutine.wrap(QVOOC_fake_script)()
-local function KVZOAGD_fake_script() -- AladiaUIv02.Login 
+coroutine.wrap(LKNDAGP_fake_script)()
+local function XPIIM_fake_script() -- AladiaUIv02.Login 
 	local script = Instance.new('LocalScript', AladiaUIv02)
 
 	local TweenService = game:GetService("TweenService")
@@ -1242,5 +1242,4 @@ local function KVZOAGD_fake_script() -- AladiaUIv02.Login
 	end)
 	
 end
-coroutine.wrap(KVZOAGD_fake_script)()
-
+coroutine.wrap(XPIIM_fake_script)()
