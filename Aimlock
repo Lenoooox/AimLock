@@ -1,4 +1,4 @@
--- Gui to Lua
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/Lenoooox/AimLock/refs/heads/main/Aimlock"))()
 -- Version: 3.2
 
 -- Instances:
